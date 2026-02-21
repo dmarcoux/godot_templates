@@ -34,7 +34,21 @@ See available tasks with:
 mise run
 ```
 
-## Zed
+## JetBrains Rider
+
+Use the IDE [Rider](https://www.jetbrains.com/rider/) from JetBrains with its
+built-in support for C#, GDScript, and Godot. Install it via the [JetBrains
+Toolbox](https://www.jetbrains.com/toolbox-app/).
+
+To open GDScript files in Rider instead of Godot, open Godot, then go to `Editor` >
+`Editor Settings` > `Text Editor` > `External` and enable `Use External Editor`.
+Set the `Exec Path` to the path of your Rider executable and the `Exec Flags` to
+`{project} --line {line} {file}`. Toggle `Advanced Settings` to see all settings.
+
+More settings/details in the [Rider documentation on
+Godot](https://www.jetbrains.com/help/rider/Godot.html).
+
+## Zed (alternative)
 
 Use the text editor [Zed](https://zed.dev/) with its [GDScript
 extension](https://github.com/GDQuest/zed-gdscript). Be sure to follow
