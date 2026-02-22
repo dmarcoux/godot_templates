@@ -44,7 +44,18 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
    _Note: By generating `global.json`, we don't have to manually enter the version number of the .NET SDK installed in the development environment._
 
-6. Adapt this README to the project. This complete section can be deleted...
+6. Initialize Godot project with the command and steps below.
+
+   1. Once the Godot editor opens, create a C# script. Godot will generate the .NET solution (`.sln`) and project file (`.csproj`).
+   2. Be sure to name the project in the project settings.
+   3. Build the project (`Alt + B` on Linux).
+   4. Close Godot, the C# script will be deleted.
+
+   ```bash
+   touch project.godot && godot project.godot && rm NewScript.cs NewScript.cs.uid
+   ```
+
+7. Adapt this README to the project. This complete section can be deleted...
 
 # Development Environment
 
