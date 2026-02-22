@@ -25,7 +25,7 @@ depends = [ "godot" ]
 run = [
   # With `nohup`, the IDE process continues to live even if the shell gets killed
   # `&` puts the process in the background to not block the shell
-  "nohup rider ./ &",
+  "nohup rider ./*.sln &",
   # The shell seems to be stuck after the execution of the previous command with `nohup`. Pressing `Enter` shows the
   # shell prompt back, but we don't need to do anything anyway, so we can simply get the shell prompt back with `exit`
   "exit",
@@ -34,7 +34,7 @@ alias = "c"
 
 [tasks.format]
 description = "Format code to match EditorConfig settings"
-run = "dotnet format"
+run = "dotnet format *.sln"
 alias = "f"
 
 [tasks.restore]
@@ -43,7 +43,7 @@ run = "dotnet restore --locked-mode"
 
 [tasks.format-check]
 description = "Verify that all code of the solution is correctly formatted"
-run = "dotnet format --no-restore --verify-no-changes"
+run = "dotnet format *.sln --no-restore --verify-no-changes"
 
 [tasks.build]
 description = "Build the solution without restoring its dependencies"
