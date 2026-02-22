@@ -20,12 +20,12 @@ run = "nohup godot project.godot &"
 alias = "g"
 
 [tasks.code]
-description = "Open the Godot project in your IDE or text editor, by default JetBrains Rider"
+description = "Open the Godot project in JetBrains Rider"
 depends = [ "godot" ]
 run = [
-  # With `nohup`, your IDE / text editor process continues to live even if the shell gets killed
+  # With `nohup`, the IDE process continues to live even if the shell gets killed
   # `&` puts the process in the background to not block the shell
-  "nohup {{arg(name='editor',default='rider')}} ./ &",
+  "nohup rider ./ &",
   # The shell seems to be stuck after the execution of the previous command with `nohup`. Pressing `Enter` shows the
   # shell prompt back, but we don't need to do anything anyway, so we can simply get the shell prompt back with `exit`
   "exit",
