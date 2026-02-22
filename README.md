@@ -28,15 +28,7 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
    _Note: By generating `.gitignore`, we don't have to keep track of the changes in the `dotnew new gitignore` template._
 
-4. Generate `.editorconfig` to follow the default .NET code style:
-
-   ```bash
-   dotnet new editorconfig
-   ```
-
-   _Note: By generating `.editorconfig`, we don't have to keep track of the changes in the `dotnew new editorconfig` template._
-
-5. Generate  `global.json` to enforce a specific .NET SDK version with .NET CLI commands and continuous integration.
+4. Generate  `global.json` to enforce a specific .NET SDK version with .NET CLI commands and continuous integration.
 
    ```bash
    mise run generateGlobalJson
@@ -44,7 +36,7 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
    _Note: By generating `global.json`, we don't have to manually enter the version number of the .NET SDK installed in the development environment._
 
-6. Initialize Godot project with the command and steps below.
+5. Initialize Godot project with the command and steps below.
 
    1. Once the Godot editor opens, create a C# script. Godot will generate the .NET solution (`.sln`) and project file (`.csproj`).
    2. Be sure to name the project in the project settings.
