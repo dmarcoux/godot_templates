@@ -80,6 +80,13 @@ To open script files in Rider instead of Godot, open Godot, then go to `Editor` 
 Set the `Exec Path` to the path of your Rider executable and the `Exec Flags` to
 `{project} --line {line} {file}`. Toggle `Advanced Settings` to see all settings.
 
+By default, not all files are included in Rider's solution explorer when you
+work on your Godot C#/.NET game. Examples of this are `README.md` or
+`mise.toml`. Quickly switching to those files isn't possible with `Navigation >
+File...`. Remedy this by including those files in your solution. In the solution
+explorer, click on `Show All Files`, then select all files to be included,
+before right-clicking to pick `Include`. Voilà!
+
 More settings/details in the [Rider documentation on
 Godot](https://www.jetbrains.com/help/rider/Godot.html).
 
