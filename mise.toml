@@ -44,14 +44,17 @@ run = "dotnet restore --locked-mode"
 [tasks.format-check]
 description = "Verify that all code of the solution is correctly formatted"
 run = "dotnet format *.sln --no-restore --verify-no-changes"
+alias = "fc"
 
 [tasks.build]
 description = "Build the solution without restoring its dependencies"
 run = "dotnet build --no-restore"
+alias = "b"
 
 [tasks.test]
 description = "Run tests for the solution without building it"
 run = "dotnet test --no-build --verbosity normal"
+alias = "t"
 
 [tasks.ci]
 description = "Run the same tasks as in the continuous integration, and in the same order"
