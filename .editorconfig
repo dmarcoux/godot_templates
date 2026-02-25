@@ -15,7 +15,7 @@ end_of_line = lf
 
 ##########################################
 # File Extension Settings
-# from https://github.com/chickensoft-games/EditorConfig/blob/main/src/.editorconfig
+# based on https://github.com/chickensoft-games/EditorConfig/blob/main/src/.editorconfig
 ##########################################
 
 # GDScript files
@@ -33,6 +33,10 @@ dotnet_diagnostic.CS1591.severity = none
 [*.cs]
 # Default Severity for all .NET Code Style rules below
 dotnet_analyzer_diagnostic.severity = warning
+# Prefer Action/Func over generic EventHandler.
+# - Simpler to use (no need for an extra *EventArgs class for type safety)
+# - Easier to read (less verbose)
+dotnet_diagnostic.CA1003.severity = none
 
 ##########################################
 # .NET Code Conventions Severities
