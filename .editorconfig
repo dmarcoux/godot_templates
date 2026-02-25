@@ -26,10 +26,6 @@ indent_style = tab
 [*.sln]
 indent_style = tab
 
-[*{_Generated.cs,.g.cs,.generated.cs}]
-# Ignore a lack of documentation for generated code. Doesn't apply to builds, just to viewing generation output.
-dotnet_diagnostic.CS1591.severity = none
-
 [*.cs]
 # Default Severity for all .NET Code Style rules below
 dotnet_analyzer_diagnostic.severity = warning
@@ -37,6 +33,9 @@ dotnet_analyzer_diagnostic.severity = warning
 # - Simpler to use (no need for an extra *EventArgs class for type safety)
 # - Easier to read (less verbose)
 dotnet_diagnostic.CA1003.severity = none
+# Do not enforce documentation for functions/classes/etc, it's not always needed in obvious cases
+# and disabling this on a case-by-case basis is annoying.
+dotnet_diagnostic.CS1591.severity = none
 
 ##########################################
 # .NET Code Conventions Severities
