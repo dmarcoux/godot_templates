@@ -20,6 +20,8 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <!-- All build warnings are treated as errors, so the build breaks -->
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Enable compiler warnings for nullability checks -->
+    <Nullable>enable</Nullable>
 
     <!-- REPRODUCIBLE BUILDS
       Avoid potentially poisoining the NuGet cache
