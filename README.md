@@ -40,14 +40,15 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
    1. Once the Godot editor opens, create a C# script. Godot will generate the .NET solution (`.sln`) and project file (`.csproj`).
    2. Be sure to name the project in the project settings.
-   3. Build the project (`Alt + B` on Linux).
-   4. Close Godot, the C# script will be deleted.
+   3. Build the project (`Alt + B` on Linux). [.editorconfig](.editorconfig) is
+      temporarily deleted to not have to pass all C#/.NET analyzers.
+   4. Close Godot, the C# script will be deleted and [.editorconfig](.editorconfig), restored.
 
    ```bash
-   touch project.godot && godot project.godot && rm NewScript.cs NewScript.cs.uid
+   touch project.godot && rm .editorconfig && godot project.godot && rm NewScript.cs NewScript.cs.uid && git checkout .editorconfig
    ```
 
-7. Adapt this README to the project. This complete section can be deleted...
+6. Adapt this README to the project. This complete section can be deleted...
 
 # Development Environment
 
