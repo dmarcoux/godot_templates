@@ -39,7 +39,7 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 5. Initialize Godot project with the command and steps below.
 
    1. Once the Godot editor opens, create a C# script. Godot will generate the .NET solution (`.sln`) and project file (`.csproj`).
-   2. Be sure to name the project in the project settings.
+   2. Be sure to name the project and .NET assembly in the project settings.
    3. Build the project (`Alt + B` on Linux). [.editorconfig](.editorconfig) is
       temporarily deleted to not have to pass all C#/.NET analyzers.
    4. Close Godot, the C# script will be deleted and [.editorconfig](.editorconfig), restored.
