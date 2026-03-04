@@ -21,7 +21,6 @@ alias = "g"
 
 [tasks.code]
 description = "Open the Godot project in JetBrains Rider"
-depends = [ "godot" ]
 run = [
   # With `nohup`, the IDE process continues to live even if the shell gets killed
   # `&` puts the process in the background to not block the shell
@@ -31,6 +30,13 @@ run = [
   "exit",
 ]
 alias = "c"
+
+[tasks.godot-code]
+description = "Run godot and code tasks"
+run = [
+  { tasks = [ "godot", "code" ] }
+]
+alias = "gc"
 
 [tasks.format]
 description = "Format code to match EditorConfig settings"
