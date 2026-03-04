@@ -22,6 +22,8 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <!-- Enable compiler warnings for nullability checks -->
     <Nullable>enable</Nullable>
+    <!-- For IDE0005 rule (Remove unnecessary usings/imports) -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <!-- REPRODUCIBLE BUILDS
       Avoid potentially poisoining the NuGet cache
