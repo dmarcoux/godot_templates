@@ -40,9 +40,10 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
    1. Once the Godot editor opens, create a C# script. Godot will generate the .NET solution (`.sln`) and project file (`.csproj`).
    2. Be sure to name the project and .NET assembly in the project settings.
-   3. Build the project (`Alt + B` on Linux). [.editorconfig](.editorconfig) is
+   3. In the editor settings, set the indent type to *Spaces* and turn off *Convert Indent on Save*. This matches [.editorconfig](.editorconfig).
+   4. Build the project (`Alt + B` on Linux). [.editorconfig](.editorconfig) is
       temporarily deleted to not have to pass all C#/.NET analyzers.
-   4. Close Godot, the C# script will be deleted and [.editorconfig](.editorconfig), restored.
+   5. Close Godot, the C# script will be deleted and [.editorconfig](.editorconfig), restored.
 
    ```bash
    touch project.godot && rm .editorconfig && godot project.godot && rm NewScript.cs NewScript.cs.uid && git checkout .editorconfig
