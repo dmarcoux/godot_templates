@@ -36,6 +36,8 @@ dotnet_diagnostic.CA1003.severity = none
 # Do not enforce documentation for functions/classes/etc, it's not always needed in obvious cases
 # and disabling this on a case-by-case basis is annoying.
 dotnet_diagnostic.CS1591.severity = none
+# Let Godot and its scenes manage the lifetime of nodes (thus their scripts too)
+dotnet_diagnostic.CA2213.severity = none
 
 ##########################################
 # .NET Code Conventions Severities
