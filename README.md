@@ -11,8 +11,19 @@ Templates for common files/configs in [Godot C#/.NET](https://godotengine.org/) 
 
   *OR*
 
-- With [GitHub's CLI](https://github.com/cli/cli), run `gh repo create
-  NEW_REPOSITORY_NAME --template=dmarcoux/godot_templates`.
+- With [GitHub's CLI](https://github.com/cli/cli):
+
+  Public repository:
+
+  ```bash
+  gh repo create NEW_REPOSITORY_NAME --template=dmarcoux/godot_templates --public
+  ```
+
+  Private repository:
+
+  ```bash
+  gh repo create NEW_REPOSITORY_NAME --template=dmarcoux/godot_templates --private
+  ```
 
 2. Install tools to run the commands from the next steps:
 
